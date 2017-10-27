@@ -24,9 +24,7 @@ then
    do
      lang="${array[i]}"
      echo $lang 'training data'
-     curl https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/$lang.traineddata
-  -o - | -C $INSTALL_DIR_TRAINING_DATA -f -
-
+     curl https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/$lang.traineddata $INSTALL_DIR_TRAINING_DATA
    done
 fi
 
